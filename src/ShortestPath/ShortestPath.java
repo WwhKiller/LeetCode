@@ -1,9 +1,7 @@
 package ShortestPath;
 
-import java.util.List;
-
 /**
- * @description:  最短路径
+ * @description:  最短路径, 只能走下，或者右
  * @author: wwh
  * @create: 2020/7/23
  */
