@@ -21,7 +21,6 @@ public class RomanToInt {
             int num = singleStringToInt(s.charAt(i));
             if (preNum < num){
                 sum -= preNum;
-
             }else {
                 sum += preNum;
             }

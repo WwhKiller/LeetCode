@@ -16,19 +16,18 @@ public class SelectionSort {
     }
 
     public  static  int[] selectionSort(int[] array){
-        for (int j = 0; j< array.length;j++) {
-            int minIndex = j;
-            //找出最小的标
-            for (int i = j+1; i < array.length; i++) {
-                if (array[minIndex] > array[i]) {
-                   minIndex = i;
+        for (int i = 0; i <array.length; i++){
+            int minIndex = i;
+            for (int j = i ; j < array.length ;j++){
+                if ( array[j]<array[minIndex] ){
+                    minIndex = j;
                 }
             }
-            //最小的下标，和最前面的数进行交换
-            int temp = array[j];
-            array[j] = array[minIndex];
+            int temp  = array[i];
+            array[i] = array[minIndex];
             array[minIndex] = temp;
         }
-        return array;
+
+        return  array;
     }
 }
