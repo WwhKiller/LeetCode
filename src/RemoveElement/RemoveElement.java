@@ -5,7 +5,7 @@ package RemoveElement;
  * @author: wwh
  * @create: 2020/7/23
  */
-public class removeElement {
+public class RemoveElement {
     public static void main(String[] args) {
         int[] nums = {0,1,2,2,3,0,4,2};
         int val = 2;
