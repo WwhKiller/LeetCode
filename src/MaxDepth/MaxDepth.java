@@ -15,7 +15,6 @@ public class MaxDepth {
 
     public static void main(String[] args) {
 
-
     }
 
     public static int maxDepth(TreeNode root) {
@@ -25,7 +24,6 @@ public class MaxDepth {
         int right=maxDepth(root.right)+1;
         return Math.max(left,right);
     }
-
 
     public static void visit(TreeNode treeNode){
         System.out.println(treeNode.val + "  ");
