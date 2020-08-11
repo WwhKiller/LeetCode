@@ -16,7 +16,6 @@ public class plunder {
         dfs(root);
         return Math.max(f.getOrDefault(root, 0), g.getOrDefault(root, 0));
     }
-
     public void dfs(TreeNode node) {
         if (node == null) {
             return;
