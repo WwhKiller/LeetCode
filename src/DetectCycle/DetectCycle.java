@@ -1,23 +1,17 @@
-package HasCycle;
-
-import AddTwoNumbers.ListNode;
-import Sort.BubbleSort.BubbleSort;
+package DetectCycle;
 
 /**
- * @description: 141. 环形链表
+ * @description:
  * @author: wwh
- * @create: 2020/10/9
+ * @create: 2020/10/10
  */
-public class HasCycle {
+public class DetectCycle {
 
-    public static void main(String[] args) {
 
-    }
-
-    public boolean hasCycle(ListNode head) {
+    public ListNode detectCycle(ListNode head) {
 
         if (head == null || head.next == null) {
-            return false;
+            return null;
         }
         //慢指针
         ListNode slowNode = head;
@@ -28,13 +22,16 @@ public class HasCycle {
         while (slowNode != fastNode){
 
             if (fastNode == null || fastNode.next ==null){
-                return false;
+                return null;
             }
 
             slowNode = slowNode.next;
             fastNode = fastNode.next.next;
 
-        }return true;
+        }
+
+
+        System.out.println(slowNode.val);return slowNode;
     }
 
     class ListNode{
